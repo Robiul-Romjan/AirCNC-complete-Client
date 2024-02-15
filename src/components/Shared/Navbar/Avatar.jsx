@@ -8,7 +8,7 @@ const Avatar = () => {
     return (
         <div>
             {
-                user ? <img className="w-8 h-8 rounded-full" src={user && user.photoURL ? user.photoURL : "" } alt="" /> :<BiSolidUserCircle className="w-8 h-8" />
+                user ? <img className="w-8 h-8 rounded-full" src={user && user.photoURL ? user.photoURL : "" } alt="user" /> :<BiSolidUserCircle className="w-8 h-8" />
             }
             
         </div>

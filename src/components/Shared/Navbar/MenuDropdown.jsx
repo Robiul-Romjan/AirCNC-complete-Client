@@ -6,11 +6,15 @@ import { AuthContext } from '../../../providers/AuthProvider';
 
 
 const MenuDropdown = () => {
-    const { user } = useContext(AuthContext)
+    const { user, logOut } = useContext(AuthContext)
     const [isOpen, setIsOpen] = useState(false)
     //   const toggleOpen = useCallback(() => {
     //     setIsOpen(value => !value)
     //   }, [])
+
+    const signOut = () => {
+        logOut()
+    }
     return (
         <div className="relative">
             <div className='flex flex-row items-center gap-3'>
@@ -37,7 +41,7 @@ const MenuDropdown = () => {
                         </Link>
                         {user ? (
                             <div
-                                //   onClick={logOut}
+                                onClick={signOut}
                                 className='px-4 py-3 hover:bg-neutral-100 transition font-semibold cursor-pointer'
                             >
                                 Logout
