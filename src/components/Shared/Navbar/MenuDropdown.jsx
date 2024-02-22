@@ -5,7 +5,8 @@ import { Link } from 'react-router-dom';
 import { AuthContext } from '../../../providers/AuthProvider';
 
 
-const MenuDropdown = () => {
+// eslint-disable-next-line react/prop-types
+const MenuDropdown = ({theme}) => {
     const { user, logOut } = useContext(AuthContext)
     const [isOpen, setIsOpen] = useState(false)
     //   const toggleOpen = useCallback(() => {
@@ -19,7 +20,7 @@ const MenuDropdown = () => {
         <div className="relative">
             <div className='flex flex-row items-center gap-3'>
                 {/* Aircnc btn */}
-                <div className='hidden md:block text-sm font-semibold py-3 px-4 rounded-full hover:bg-neutral-100 transition cursor-pointer'>
+                <div className={`hidden md:block text-sm font-semibold py-3 px-4 rounded-full ${theme ? "hover:bg-black" : "hover:bg-neutral-100"} transition cursor-pointer`}>
                     AirCNC your home
                 </div>
                 {/* Dropdown btn */}
@@ -31,18 +32,18 @@ const MenuDropdown = () => {
                 </div>
             </div>
             {
-                isOpen && <div className='absolute rounded-xl shadow-md w-[40vw] md:w-3/4 bg-white overflow-hidden right-0 top-12 text-sm'>
+                isOpen && <div className={`absolute rounded-xl shadow-md w-[40vw] md:w-3/4 ${theme ? "dark" : "bg-white"} overflow-hidden right-0 top-12 text-sm`}>
                     <div className='flex flex-col cursor-pointer'>
                         <Link
                             to='/'
-                            className='block md:hidden px-4 py-3 hover:bg-neutral-100 transition font-semibold'
+                            className={`block md:hidden px-4 py-3 ${theme ? "hover:bg-black" : "hover:bg-neutral-100"} transition font-semibold`}
                         >
                             Home
                         </Link>
                         {user ? (
                             <div
                                 onClick={signOut}
-                                className='px-4 py-3 hover:bg-neutral-100 transition font-semibold cursor-pointer'
+                                className={`px-4 py-3 ${theme ? "hover:bg-black" : "hover:bg-neutral-100"} transition font-semibold cursor-pointer`}
                             >
                                 Logout
                             </div>
@@ -50,13 +51,13 @@ const MenuDropdown = () => {
                             <>
                                 <Link
                                     to='/login'
-                                    className='px-4 py-3 hover:bg-neutral-100 transition font-semibold'
+                                    className={`px-4 py-3  ${theme ? "hover:bg-black" : "hover:bg-neutral-100"} transition font-semibold`}
                                 >
                                     Login
                                 </Link>
                                 <Link
                                     to='/sign-up'
-                                    className='px-4 py-3 hover:bg-neutral-100 transition font-semibold'
+                                    className={`px-4 py-3  ${theme ? "hover:bg-black" : "hover:bg-neutral-100"} transition font-semibold`}
                                 >
                                     Sign Up
                                 </Link>

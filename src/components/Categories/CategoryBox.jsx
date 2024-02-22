@@ -1,10 +1,35 @@
-/* eslint-disable no-unused-vars */
+import { useNavigate, useSearchParams } from "react-router-dom";
+import qs from "query-string";
 
 // eslint-disable-next-line react/prop-types
 const CategoryBox = ({ label, icon: Icon }) => {
+  const [params] = useSearchParams();
+
+  const navigate = useNavigate();
+
+  const handleCategories = () => {
+    let currentQuery = {};
+    if (params) {
+      currentQuery = qs.parse(params.toString());
+    }
+    const updatedQuery = {
+      ...currentQuery,
+      category: label,
+    };
+    const url = qs.stringifyUrl(
+      {
+        url: "/",
+        query: updatedQuery,
+      },
+      { skipNull: true }
+    );
+    navigate(url);
+  };
+
   return (
-    <div
-      className=" flex 
+    <button onClick={handleCategories}>
+      <div
+        className=" flex 
         flex-col 
         items-center 
         justify-center 
@@ -15,10 +40,11 @@ const CategoryBox = ({ label, icon: Icon }) => {
         hover:text-neutral-800
         transition
         cursor-pointer"
-    >
-      <Icon size="26" />
-      <div className="text-sm font-medium">{label}</div>
-    </div>
+      >
+        <Icon size="26" />
+        <div className="text-sm font-medium">{label}</div>
+      </div>
+    </button>
   );
 };
 
