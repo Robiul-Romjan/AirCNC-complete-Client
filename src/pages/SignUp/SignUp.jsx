@@ -1,10 +1,11 @@
-import { Link, useLocation, useNavigate } from "react-router-dom";
-
+import { Link } from "react-router-dom";
 import { FcGoogle } from "react-icons/fc";
 import { useContext } from "react";
 import { AuthContext } from "../../providers/AuthProvider";
 import { toast } from "react-toastify";
 import { TbFidgetSpinner } from "react-icons/tb";
+import useAuth from "../../hooks/useAuth";
+
 
 const SignUp = () => {
   const {
@@ -15,10 +16,7 @@ const SignUp = () => {
     updateUserProfile,
   } = useContext(AuthContext);
 
-  const navigate = useNavigate();
-  const location = useLocation();
-
-  const from = location.state?.from?.pathname || "/";
+  const {addUserToDB} = useAuth()
 
   const handleSignUp = (e) => {
     e.preventDefault();
@@ -44,8 +42,12 @@ const SignUp = () => {
           .then(() => {
             updateUserProfile(name, imageUrl)
               .then(() => {
-                toast.success("Successfully Sign-up your account");
-                navigate(from, { replace: true });
+                const user = {
+                  name,
+                  email,
+                  photoURL: imageUrl
+                }
+                addUserToDB(user, "Successfully Register")
               })
               .catch((error) => {
                 setLoading(false);
@@ -67,13 +69,15 @@ const SignUp = () => {
   const handleGoogleSignIn = () => {
     signInWithGoogle()
       .then((result) => {
-        console.log(result.user);
-        navigate(from, { replace: true });
-        toast("Successfully login");
+        const user = {
+          name: result?.user?.displayName,
+          email: result?.user?.email,
+          photoURL: result?.user?.photoURL
+        }
+        addUserToDB(user, "Successfully Login")
       })
       .catch((error) => {
         setLoading(false);
-        console.log(error.message);
         toast.error(error.message);
       });
   };

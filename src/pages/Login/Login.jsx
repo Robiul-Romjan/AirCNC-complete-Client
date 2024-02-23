@@ -5,15 +5,16 @@ import { useContext, useRef } from "react";
 import { AuthContext } from "../../providers/AuthProvider";
 import { toast } from "react-toastify";
 import { TbFidgetSpinner } from "react-icons/tb";
+import useAuth from "../../hooks/useAuth";
 
 const Login = () => {
   const { loading, setLoading, signIn, signInWithGoogle, resetPassword } =
     useContext(AuthContext);
+  const { addUserToDB } = useAuth();
+
   const navigate = useNavigate();
-
   const location = useLocation();
-  const from = location.state?.from?.pathname || "/"
-
+  const from = location.state?.from?.pathname || "/";
 
   const emailRef = useRef();
 
@@ -23,15 +24,13 @@ const Login = () => {
     const form = e.target;
     const email = form.email.value;
     const password = form.password.value;
-    // console.log(email, password)
+
     signIn(email, password)
-      .then((result) => {
-        console.log(result.user);
-        navigate(from, {replace: true});
+      .then(() => {
+        navigate(from, { replace: true });
         toast("Successfully login");
       })
       .catch((error) => {
-        console.log(error.message);
         setLoading(false);
         toast.error(error.message);
       });
@@ -56,13 +55,15 @@ const Login = () => {
   const handleGoogleSignIn = () => {
     signInWithGoogle()
       .then((result) => {
-        console.log(result.user);
-        navigate(from, {replace: true});
-        toast("Successfully login");
+        const user = {
+          name: result?.user?.displayName,
+          email: result?.user?.email,
+          photoURL: result?.user?.photoURL,
+        };
+        addUserToDB(user, "Successfully Login");
       })
       .catch((error) => {
         setLoading(false);
-        console.log(error.message);
         toast.error(error.message);
       });
   };
