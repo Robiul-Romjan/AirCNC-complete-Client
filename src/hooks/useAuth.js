@@ -16,7 +16,6 @@ const useAuth = () => {
     try {
       const response = await api.put(`users/${user.email}`, newUser);
       if (response.statusText === "OK") {
-        console.log("its ok");
         navigate(from, { replace: true });
         toast("Successfully login");
       }
@@ -24,10 +23,22 @@ const useAuth = () => {
       toast.error(message);
     }
   };
+
+
+  const addRoomToDB = async (room) => {
+    try {
+      const response = await api.post(`rooms`, room);
+      if (response.statusText === "OK") {
+        toast("Successfully Added Your Room");
+      }
+    } catch (error) {
+      toast.error(error.message);
+    }
+  };
  
 
 
-  return { addUserToDB };
+  return { addUserToDB, addRoomToDB };
 };
 
 export default useAuth;

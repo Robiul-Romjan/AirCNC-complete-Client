@@ -1,74 +1,192 @@
 [
-    {
-      "location": "Sidemen, Bali",
-      "image": "https://a0.muscache.com/im/pictures/4f70b681-a792-4530-8c52-f2a8d262942d.jpg",
-      "dateRange": "Jan 9, 2024 - Jan 14, 2024",
-      "price": 456,
-      "category": "Beach"
-    },
-    {
-      "location": "Abiansemal, Bali",
-      "image": "https://a0.muscache.com/im/pictures/e25a9b25-fa98-4160-bfd1-039287bf38b6.jpg",
-      "dateRange": "Jan 9, 2024 - Jan 14, 2024",
-      "price": 513,
-      "category": "Windmills"
-    },
-    {
-      "location": "Kecamatan Ubud, Bali",
-      "image": "https://a0.muscache.com/im/pictures/prohost-api/Hosting-46761225/original/11058c0d-fac8-4035-8f16-8b3abe7441cd.jpeg",
-      "dateRange": "Jan 9, 2024 - Jan 14, 2024",
-      "price": 456,
-      "category": "Modern"
-    },
-    {
-      "location": "Koh samui, Thailand",
-      "image": "https://a0.muscache.com/im/pictures/miso/Hosting-820950793239599563/original/d5c1f686-f06a-4b65-9f55-32e19dc0b23f.jpeg",
-      "dateRange": "Jan 9, 2024 - Jan 14, 2024",
-      "price": 513,
-      "category": "Countryside"
-    },
-  
-    {
-      "location": "Surat Thani, Thailand",
-      "image": "https://a0.muscache.com/im/pictures/miso/Hosting-820954888871612167/original/f37e01a9-cb1a-446d-be7e-c1d62d1f1c23.jpeg",
-      "dateRange": "Jan 9, 2024 - Jan 14, 2024",
-      "price": 456,
-      "category": "Windmills"
-    },
-    {
-      "location": "Khao Lak, Thailand",
-      "image": "https://a0.muscache.com/im/pictures/miso/Hosting-826025597172937112/original/d6bbe2ca-9337-4a7e-a5d3-ca8fe72821db.jpeg?im_w=1200",
-      "dateRange": "Jan 9, 2024 - Jan 14, 2024",
-      "price": 345,
-      "category": "Windmills"
-    },
-    {
-      "location": "Kecamatan Selemadeg, Bali",
-      "image": "https://a0.muscache.com/im/pictures/miso/Hosting-807995199727408777/original/3ba641e8-f9be-41cb-b834-aba9695726fa.jpeg",
-      "dateRange": "Jan 9, 2024 - Jan 14, 2024",
-      "price": 513,
-      "category": "Beach"
-    },
-    {
-      "location": "Khao Lak, Thailand",
-      "image": "https://a0.muscache.com/im/pictures/miso/Hosting-826732383054098647/original/457337ee-af64-462f-90d0-b9fa1ce98a73.jpeg",
-      "dateRange": "Jan 9, 2024 - Jan 14, 2024",
-      "price": 213,
-      "category": "Windmills"
-    },
-    {
-      "location": "Khao Lak, Thailand",
-      "image": "https://a0.muscache.com/im/pictures/miso/Hosting-826726918494647682/original/d1586407-7873-4c15-91e2-61ab713d2aca.jpeg",
-      "dateRange": "Jan 9, 2024 - Jan 14, 2024",
-      "price": 213,
-      "category": "Windmills"
-    },
-    {
-      "location": "Kecamatan Ubud, Bali",
-      "image": "https://a0.muscache.com/im/pictures/miso/Hosting-812919482265584093/original/c60bc2f2-7d16-4f7d-acf2-44c2f855fb81.jpeg",
-      "dateRange": "Jan 9, 2024 - Jan 14, 2024",
-      "price": 213,
-      "category": "Pools"
+  {
+    "location": " At Tayseer District, 24231 Makkah, Saudi Arabia",
+    "image": "https://a0.muscache.com/im/pictures/miso/Hosting-826025597172937112/original/d6bbe2ca-9337-4a7e-a5d3-ca8fe72821db.jpeg?im_w=1200",
+    "dateRange": "Jan 9, 2024 - Jan 14, 2024",
+    "price": 345,
+    "category": "Windmills",
+    "title": "Al Kiswah Towers Hotel",
+    "description": "Providing free WiFi, Al Kiswah Towers Hotel is situated in Makkah, 1 km from Abraj Al Bait and 900 m from Masjid Al Haram. 9 km from Um AlQura University, the property is also 9 km away from Hira Cave. Mina is 12 km from the hotel and Makkah Mall is 12 km away. All guest rooms in the hotel are equipped with a flat-screen TV. The rooms are fitted with a private bathroom. Al Kiswah Towers Hotel can conveniently provide information at the reception to help guests to get around the area.",
+    "bathrooms": "2",
+    "bedrooms": "3",
+    "from": "Thu Feb 08 2024 00:00:00 GMT+0600 (Bangladesh Standard Time)",
+    "to": "Fri Feb 16 2024 00:00:00 GMT+0600 (Bangladesh Standard Time)",
+    "total_guest": "6",
+    "owner": {
+      "name": "Robiul Romjan",
+      "email": "robiulromjan7@gmail.com",
+      "photo": "https://lh3.googleusercontent.com/a/ACg8ocKwgPHaItOeHueNJt692h4K3RhbBA6kag3FU8U9nmY4PQ=s96-c"
     }
-  ]
-  
+  },
+  {
+    "location": "Kalachadpur Main Road, 1212 Dhaka, Bangladesh",
+    "image": "https://a0.muscache.com/im/pictures/miso/Hosting-812919482265584093/original/c60bc2f2-7d16-4f7d-acf2-44c2f855fb81.jpeg",
+    "dateRange": "Jan 9, 2024 - Jan 14, 2024",
+    "price": 513,
+    "category": "Pools",
+    "title": "Hotel West Valley Kalachadpur, Dhaka, Bangladesh",
+    "description": "Hotel West Valley Dhaka is situated in Dhaka, within 2.7 km of UITS and 2.8 km of Consulate of Singapore. Featuring a restaurant, the 3-star hotel has air-conditioned rooms with free WiFi, each with a private bathroom. There is free private parking and the property features paid airport shuttle service. The rooms in the hotel are fitted with a kettle. Each room is equipped with a flat-screen TV, and some rooms at Hotel West Valley Dhaka have a city view. At the accommodation rooms are fitted with bed linen and towels. A buffet, Asian or halal breakfast can be enjoyed at the property.",
+    "bathrooms": "2",
+    "bedrooms": "4",
+    "from": "Thu Feb 08 2024 00:00:00 GMT+0600 (Bangladesh Standard Time)",
+    "to": "Fri Feb 16 2024 00:00:00 GMT+0600 (Bangladesh Standard Time)",
+    "total_guest": "6",
+    "owner": {
+      "name": "Robiul Romjan",
+      "email": "robiulromjan7@gmail.com",
+      "photo": "https://lh3.googleusercontent.com/a/ACg8ocKwgPHaItOeHueNJt692h4K3RhbBA6kag3FU8U9nmY4PQ=s96-c"
+    }
+  },
+  {
+    "location": "Innai, 4750 Cox's Bazar, Bangladesh",
+    "image": "https://a0.muscache.com/im/pictures/miso/Hosting-826726918494647682/original/d1586407-7873-4c15-91e2-61ab713d2aca.jpeg",
+    "dateRange": "Jan 9, 2024 - Jan 14, 2024",
+    "price": 413,
+    "category": "Windmills",
+    "title": "Sea Pearl Beach Resort & Spa Cox's Bazar",
+    "description": "Facing the beachfront, Sea Pearl Beach Resort & Spa Cox's Bazar offers 5-star accommodation in Cox's Bazar and features an outdoor swimming pool, fitness centre and garden. Among the various facilities of this property are a bar and a private beach area. The accommodation offers room service, a 24-hour front desk and currency exchange for guests. Guests at Sea Pearl Beach Resort & Spa Cox's Bazar can enjoy a continental breakfast. At the hotel you will find a restaurant serving American, Indian and Japanese cuisine. A halal option can also be requested.",
+    "bathrooms": "2",
+    "bedrooms": "4",
+    "from": "Thu Feb 08 2024 00:00:00 GMT+0600 (Bangladesh Standard Time)",
+    "to": "Fri Feb 16 2024 00:00:00 GMT+0600 (Bangladesh Standard Time)",
+    "total_guest": "6",
+    "owner": {
+      "name": "Robiul Romjan",
+      "email": "robiulromjan7@gmail.com",
+      "photo": "https://lh3.googleusercontent.com/a/ACg8ocKwgPHaItOeHueNJt692h4K3RhbBA6kag3FU8U9nmY4PQ=s96-c"
+    }
+  },
+  {
+    "location": "21482 Makkah, Saudi Arabia",
+    "image": "https://a0.muscache.com/im/pictures/miso/Hosting-807995199727408777/original/3ba641e8-f9be-41cb-b834-aba9695726fa.jpeg",
+    "dateRange": "Jan 9, 2024 - Jan 14, 2024",
+    "price": 513,
+    "category": "Beach",
+    "title": "Land Premium Hotel, Beside Al Tobaishi Mousque, 21482 Makkah, Saudi Arabia",
+    "description": "Located in Makkah, 1.4 km from Masjid Al Haram, Land Premium 1 Hotel has a number of amenities including a shared lounge on The Floor,  1.6 km from Safwah tower, the property is also a 20-minute walk away from Abraj Al Bait. Free WiFi is available throughout the property. All units at the hotel are fitted with a flat-screen TV. Each room is fitted with a private bathroom with free toiletries. The units will provide guests with a fridge. Staff at the 24-hour front desk can lend a hand with guidance about the area.",
+    "bathrooms": "2",
+    "bedrooms": "4",
+    "from": "Thu Feb 08 2024 00:00:00 GMT+0600 (Bangladesh Standard Time)",
+    "to": "Fri Feb 16 2024 00:00:00 GMT+0600 (Bangladesh Standard Time)",
+    "total_guest": "6",
+    "owner": {
+      "name": "Robiul Romjan",
+      "email": "robiulromjan7@gmail.com",
+      "photo": "https://lh3.googleusercontent.com/a/ACg8ocKwgPHaItOeHueNJt692h4K3RhbBA6kag3FU8U9nmY4PQ=s96-c"
+    }
+  },
+  {
+    "location": "Ajyad, Mecca, Saudi Arabia",
+    "image": "https://a0.muscache.com/im/pictures/miso/Hosting-826732383054098647/original/457337ee-af64-462f-90d0-b9fa1ce98a73.jpeg",
+    "dateRange": "Jan 9, 2024 - Jan 14, 2024",
+    "price": 213,
+    "category": "Windmills",
+    "title": "Park Inn by Radisson Makkah Al Naseem",
+    "description": "The car parking and the Wi-Fi are always free, so you can stay in touch and come and go as you please. Conveniently situated in the Ajyad part of Mecca, this property puts you close to attractions and interesting dining options. Don't leave before paying a visit to the famous Al-Masjid al-Haram Mosque. Rated with 5 stars, this high-quality property provides guests with access to restaurant and fitness center on-site. Make everyday special with all that Mecca has to offer with a stay at Park Inn by Radisson Makkah Al Naseem.",
+    "bathrooms": "1",
+    "bedrooms": "2",
+    "from": "Thu Feb 08 2024 00:00:00 GMT+0600 (Bangladesh Standard Time)",
+    "to": "Fri Feb 16 2024 00:00:00 GMT+0600 (Bangladesh Standard Time)",
+    "total_guest": "4",
+    "owner": {
+      "name": "Robiul Romjan",
+      "email": "robiulromjan7@gmail.com",
+      "photo": "https://lh3.googleusercontent.com/a/ACg8ocKwgPHaItOeHueNJt692h4K3RhbBA6kag3FU8U9nmY4PQ=s96-c"
+    }
+  },
+  {
+    "location": "Sidemen, Bali",
+    "image": "https://a0.muscache.com/im/pictures/4f70b681-a792-4530-8c52-f2a8d262942d.jpg",
+    "dateRange": "Jan 9, 2024 - Jan 14, 2024",
+    "price": 456,
+    "category": "Beach",
+    "title": "Whispering Pines Cottages| Cabin | Tandi",
+    "description": "The treehouse is nestled in the Himalayan subtropical pine forests. It is made keeping in mind to provide a comfortable and memorable stay to travelers seeking a break from the hustle of city life. The house is cozy both in winter and summer. It has a 360-degree view of the greater Himalayas.",
+    "bathrooms": "2",
+    "bedrooms": "4",
+    "from": "Thu Feb 08 2024 00:00:00 GMT+0600 (Bangladesh Standard Time)",
+    "to": "Fri Feb 16 2024 00:00:00 GMT+0600 (Bangladesh Standard Time)",
+    "total_guest": "6",
+    "owner": {
+      "name": "Robiul Romjan",
+      "email": "robiulromjan7@gmail.com",
+      "photo": "https://lh3.googleusercontent.com/a/ACg8ocKwgPHaItOeHueNJt692h4K3RhbBA6kag3FU8U9nmY4PQ=s96-c"
+    }
+  },
+  {
+    "location": "Abiansemal, Bali",
+    "image": "https://a0.muscache.com/im/pictures/e25a9b25-fa98-4160-bfd1-039287bf38b6.jpg",
+    "dateRange": "Jan 9, 2024 - Jan 14, 2024",
+    "price": 513,
+    "category": "Windmills",
+    "title": "Himalayan Cedar Nest in Sainj Valley",
+    "description": "This cozy and budget-friendly wooden cabin in the beautiful valley of Deohari/Sainj offers a close to nature experience. You can enjoy the jaw-dropping view of snow-capped glaciers from the luxury of your soft, comfortable bed or explore the amazing treks to mountains, waterfalls and meadows around.",
+    "bathrooms": "3",
+    "bedrooms": "5",
+    "from": "Thu Feb 08 2024 00:00:00 GMT+0600 (Bangladesh Standard Time)",
+    "to": "Fri Feb 16 2024 00:00:00 GMT+0600 (Bangladesh Standard Time)",
+    "total_guest": "7",
+    "owner": {
+      "name": "Robiul Romjan",
+      "email": "robiulromjan7@gmail.com",
+      "photo": "https://lh3.googleusercontent.com/a/ACg8ocKwgPHaItOeHueNJt692h4K3RhbBA6kag3FU8U9nmY4PQ=s96-c"
+    }
+  },
+  {
+    "location": "Kecamatan Ubud, Bali",
+    "image": "https://a0.muscache.com/im/pictures/prohost-api/Hosting-46761225/original/11058c0d-fac8-4035-8f16-8b3abe7441cd.jpeg",
+    "dateRange": "Jan 9, 2024 - Jan 14, 2024",
+    "price": 306,
+    "category": "Modern",
+    "title": "Tree House amidst forest @ Kailasa Woods",
+    "description": "Kailasa Woods is a little log house amidst a Sal forest on the foot hills of Mussoorie. A tree house packed with all amenities but picked out of a fairly tale book, crafted with warmth and love, fused with dreams to let you live and experience a jungle book era. With bunk bed and storybook, home made food and starry skies, open balcony and cool breeze, chirping of birds and jungle sounds .",
+    "bathrooms": "1",
+    "bedrooms": "3",
+    "from": "Thu Feb 08 2024 00:00:00 GMT+0600 (Bangladesh Standard Time)",
+    "to": "Fri Feb 16 2024 00:00:00 GMT+0600 (Bangladesh Standard Time)",
+    "total_guest": "5",
+    "owner": {
+      "name": "Robiul Romjan",
+      "email": "robiulromjan7@gmail.com",
+      "photo": "https://lh3.googleusercontent.com/a/ACg8ocKwgPHaItOeHueNJt692h4K3RhbBA6kag3FU8U9nmY4PQ=s96-c"
+    }
+  },
+  {
+    "location": "Koh samui, Thailand",
+    "image": "https://a0.muscache.com/im/pictures/miso/Hosting-820950793239599563/original/d5c1f686-f06a-4b65-9f55-32e19dc0b23f.jpeg",
+    "dateRange": "Jan 9, 2024 - Jan 14, 2024",
+    "price": 513,
+    "category": "Countryside",
+    "title": "Lake touch Luxury Wooden Chalet with In HouseChef",
+    "description": "Escape to tranquility at The Arowana Lakeside, Igatpuri where rustic charm meets breathtaking views. Nestled on a 1-acre property, our wooden-style lake chalet offers a serene retreat with stunning lakeside vacations. With a Full Time in-house chef (included in the package, just pay for groceries) the villa is ideal for unforgettable family gatherings and rejuvenating vacations.",
+    "bathrooms": "2",
+    "bedrooms": "3",
+    "from": "Thu Feb 08 2024 00:00:00 GMT+0600 (Bangladesh Standard Time)",
+    "to": "Fri Feb 16 2024 00:00:00 GMT+0600 (Bangladesh Standard Time)",
+    "total_guest": "6",
+    "owner": {
+      "name": "Robiul Romjan",
+      "email": "robiulromjan7@gmail.com",
+      "photo": "https://lh3.googleusercontent.com/a/ACg8ocKwgPHaItOeHueNJt692h4K3RhbBA6kag3FU8U9nmY4PQ=s96-c"
+    }
+  },
+  {
+    "location": "Surat Thani, Thailand",
+    "image": "https://a0.muscache.com/im/pictures/miso/Hosting-820954888871612167/original/f37e01a9-cb1a-446d-be7e-c1d62d1f1c23.jpeg",
+    "dateRange": "Jan 9, 2024 - Jan 14, 2024",
+    "price": 456,
+    "category": "Windmills",
+    "title": "Chao Pao Villa, bohemian chic stunning sea-view",
+    "description": "Chao Pao villa charms the visitor with its minimalist architecture, its elegant bohemian-chic interior-design and its hanging garden that melts in the lush jungle. All the units of the house open out to a 16 meters long infinity swimming pool overlooking the sea and offer unobstructed views over the crystal-clear waters of Ang Thong Marine Park. The villa is ideally located a few minutes from the most beautiful beaches of the Northwest coast and very close to Yoga centers and the island’s most famous restaurants.",
+    "bathrooms": "2",
+    "bedrooms": "3",
+    "from": "Thu Feb 08 2024 00:00:00 GMT+0600 (Bangladesh Standard Time)",
+    "to": "Fri Feb 16 2024 00:00:00 GMT+0600 (Bangladesh Standard Time)",
+    "total_guest": "6",
+    "owner": {
+      "name": "Robiul Romjan",
+      "email": "robiulromjan7@gmail.com",
+      "photo": "https://lh3.googleusercontent.com/a/ACg8ocKwgPHaItOeHueNJt692h4K3RhbBA6kag3FU8U9nmY4PQ=s96-c"
+    }
+  }
+]
