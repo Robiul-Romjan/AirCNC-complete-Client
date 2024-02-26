@@ -3,29 +3,64 @@ import Avatar from "./Avatar";
 import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../../providers/AuthProvider";
+import HostRequestModal from "../../Modals/HostRequestModal";
+import useAuth from "../../../hooks/useAuth";
+import { BeatLoader } from "react-spinners";
+import { toast } from "react-toastify";
 
 // eslint-disable-next-line react/prop-types
 const MenuDropdown = ({ theme }) => {
-  const { user, logOut } = useContext(AuthContext);
+  const { user, logOut, currentUser, setCurrentUser, loadingNav } =
+    useContext(AuthContext);
   const [isOpen, setIsOpen] = useState(false);
-  //   const toggleOpen = useCallback(() => {
-  //     setIsOpen(value => !value)
-  //   }, [])
+  const [modal, setModal] = useState(false);
+  const { makeUserHost } = useAuth();
 
   const signOut = () => {
     logOut();
+    setCurrentUser(null);
   };
+
+  const handleModal = (email) => {
+    makeUserHost(email);
+    setModal(false);
+  };
+
+  const handleRole = () => {
+    if(!user){
+     return toast("You must be login or register first")
+    }else{
+      setModal(true)
+    }
+    
+  }
+
+  if (loadingNav) {
+    return <BeatLoader color="red" />;
+  }
+
   return (
     <div className="relative">
       <div className="flex flex-row items-center gap-3">
         {/* Aircnc btn */}
+
         <div
-          className={`hidden md:block text-sm font-semibold py-3 px-4 rounded-full ${
+          className={`hidden md:block text-sm font-semibold py-3 px-6 rounded-full ${
             theme ? "hover:bg-black" : "hover:bg-neutral-100"
-          } transition cursor-pointer`}
+          } transition`}
         >
-          AirCNC your home
+          {currentUser?.role === "Host" ? (
+            ""
+          ) : (
+            <button
+              className="cursor-pointer"
+              onClick={handleRole}
+            >
+              AirCNC your home
+            </button>
+          )}
         </div>
+
         {/* Dropdown btn */}
         <div
           onClick={() => setIsOpen(!isOpen)}
@@ -54,8 +89,8 @@ const MenuDropdown = ({ theme }) => {
             </Link>
             {user ? (
               <>
-                <Link 
-                to="dashboard"
+                <Link
+                  to="dashboard"
                   className={`px-4 py-3 ${
                     theme ? "hover:bg-black" : "hover:bg-neutral-100"
                   } transition font-semibold cursor-pointer`}
@@ -93,6 +128,14 @@ const MenuDropdown = ({ theme }) => {
             )}
           </div>
         </div>
+      )}
+      {modal && (
+        <HostRequestModal
+          modalHandler={handleModal}
+          isOpen={modal}
+          closeModal={setModal}
+          email={user?.email}
+        />
       )}
     </div>
   );

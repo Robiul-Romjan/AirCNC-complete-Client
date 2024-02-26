@@ -7,7 +7,8 @@ import { AuthContext } from "../../../providers/AuthProvider";
 
 
 const Navbar = () => {
-    const {theme} = useContext(AuthContext)
+    const {theme} = useContext(AuthContext);
+
     return (
         <div className={`fixed w-full z-10 shadow-md ${theme ? "dark" : "bg-white text-black"}`}>
             <div className='py-4 border-b-[1px]'>

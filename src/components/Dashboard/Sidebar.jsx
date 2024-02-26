@@ -7,6 +7,9 @@ import { AiOutlineBars } from 'react-icons/ai'
 import { BsFillHouseAddFill } from 'react-icons/bs'
 import { AuthContext } from '../../providers/AuthProvider'
 import Logo from '../Shared/Navbar/Logo'
+
+
+
 const Sidebar = () => {
   const navigate = useNavigate()
   // eslint-disable-next-line no-unused-vars

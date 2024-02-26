@@ -5,6 +5,8 @@ import Loader from "../Shared/Loader/Loader";
 import { AuthContext } from "../../providers/AuthProvider";
 import { useSearchParams } from "react-router-dom";
 import NoDataFound from "../Shared/NoDatFound/NoDataFound";
+import { toast } from "react-toastify";
+import api from "../../api/axios";
 
 const Rooms = () => {
   const { rooms, setRooms, loading, setLoading } = useContext(AuthContext);
@@ -14,20 +16,26 @@ const Rooms = () => {
 
   useEffect(() => {
     setLoading(true);
-    fetch("./roomsData.json")
-      .then((res) => res.json())
-      .then((data) => {
+    const getRoomsToDB = async () => {
+      try {
+        const response = await api.get(`rooms`);
         if (category) {
-          const filterData = data.filter((room) => room.category === category);
-          setRooms(filterData);
+          const categoryData = response?.data.filter(
+            (room) => room.category === category
+          );
+          setRooms(categoryData);
+          setLoading(false);
         } else {
-          setRooms(data);
+          setRooms(response?.data);
+          setLoading(false);
         }
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-    setLoading(false);
+      } catch (error) {
+        toast.error(error.message);
+        setLoading(false);
+      }
+    };
+    getRoomsToDB();
+    
   }, [category, setLoading, setRooms]);
 
   if (loading) {
@@ -47,7 +55,7 @@ const Rooms = () => {
   return (
     <Container>
       <div className="mt-12 gap-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-        { rooms && rooms.map((room, i) => <Card key={i} room={room} />)}
+        {rooms && rooms.map((room, i) => <Card key={i} room={room} />)}
       </div>
     </Container>
   );
