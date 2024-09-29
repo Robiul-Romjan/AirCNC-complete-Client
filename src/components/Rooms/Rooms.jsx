@@ -14,7 +14,7 @@ const Rooms = () => {
   const [params] = useSearchParams();
   const category = params.get("category");
 
-  useEffect(() => {
+  useEffect(() => { 
     setLoading(true);
     const getRoomsToDB = async () => {
       try {

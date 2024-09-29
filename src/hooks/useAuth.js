@@ -81,7 +81,7 @@ useEffect(()=> {
     }
    };
    getCurrentUser()
-}, [setCurrentUser, setLoadingNav, user])
+}, [setCurrentUser, setLoadingNav, user]);
 
 
   return { addUserToDB, addRoomToDB, makeUserHost };

@@ -14,7 +14,7 @@ const Card = ({ room }) => {
             relative 
             overflow-hidden 
             rounded-xl
-          "
+          " 
         >
           <img
             className="
